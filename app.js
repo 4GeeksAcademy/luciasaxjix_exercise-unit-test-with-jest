@@ -36,11 +36,12 @@ const fromYenToEuro = (yen) =>{
 }
 
 const fromYenToPound = (yen) => {
-    let conversionYenEuro = fromYenToEuro(yen)
-    let conversionPound = conversionYenEuro * oneEuroIs["GBP"]
-    return conversionPound 
+    let conversionYenEuro = fromYenToEuro (yen)
+    let conversionToPound = conversionYenEuro * oneEuroIs["GBP"]
+    return conversionToPound 
 }
 console.log(fromYenToPound(1))
 // exporta la función para usarla en otros archivos 
 // (similar a la palabra clave `export` cuando se usa webpack)
-module.exports = { sum, fromEuroToDollar, fromDollarToEuro, fromDollarToYen, fromYenToPound};
+module.exports = { sum, fromEuroToDollar, fromDollarToEuro, fromDollarToYen,fromYenToPound};
+
